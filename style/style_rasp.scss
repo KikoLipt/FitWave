@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://myfonts.ru/myfonts?fonts=zhizn');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Flex';
+}
+
+body{
+    background-color: black;
+}
+
+h1, h2{
+    font-family: 'Zhizn';
+    font-size: 90px;
+    color: white;
+    font-weight: 300;
+}
+h3{
+    font-family: 'Zhizn';
+    font-size: 30px;
+    color: black;
+}
+p{
+    font-size: 24px;
+}
+
+.container{
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+header{
+    background-color: white;
+}
+
+.menu{
+    padding-top: 24px;
+    padding-bottom: 17px;
+    &_top{
+        display: flex;
+        align-items: center;
+        &_pice{
+            color: black;
+            text-decoration: none;
+            list-style: none;
+            &_topic{
+                font-size: 24px;
+                font-weight: 400;
+                margin-left: 62px;
+            }
+            &_bmenu{
+                display: none;
+            }
+        }
+    }
+}
+
+.menu_top_pice:nth-child(8){
+    margin-left: 237px;
+}
+
+#banner{
+    background: no-repeat, url(../img/banner2.png);
+    background-size: cover;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.banner{
+    max-height: 975px;
+    padding-top: 246px;
+    padding-bottom: 421px;
+    &_title{
+        padding-top: 109px;
+        padding-bottom: 109px;
+    }
+}
+//trainers
+.trainers{
+    background-color: #222;
+    display: flex;
+    padding: 104px 52px;
+    margin-top: 147px;
+    margin-bottom: 147px;
+    &_title{
+        color: #fff;
+        margin-right: 35px;
+        max-width: 396px;
+    }
+    &_box{
+        
+        &_subbox{
+            display: flex;
+            margin-left: 40px;
+            margin-bottom: 25px;
+            &_card{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 50px;
+                cursor: pointer;
+                &_img{
+                    
+                }
+                &_text{
+                    color: #fff;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+hr{
+    border-width: 4px;
+    color: #fff;
+}
+
+//tren
+#tren{
+    background:no-repeat, url(../img/trenbg.png);
+    width: 100%;
+    background-size: cover;
+}
+.tren{
+    padding-top: 82px;
+    padding-bottom: 51px;
+    &_title{
+        max-width: 695px;
+    }
+    &_filial{
+
+        &_text{
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 35px;
+            font-size: 34px;
+            font-weight: 500;
+        }
+    }
+    &_box{
+        background-color: #222;
+        padding: 67px 82px 56px 81px;
+        &_subbox{
+            display: flex;
+            margin-bottom: 61px;
+            width: 1277px;
+            justify-content: space-between;
+            &_card{
+                width: 382px;
+                height: 339px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                &_img{
+                    margin-top: 26px;
+                    align-self: center;
+                }
+                &_title{
+                    max-width: 330px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    margin-left: 30px;
+                    font-weight: 600;
+                }
+                &_box{
+                    max-width: 296px;
+                    margin-left: 30px;
+                    &_subbox{
+                        display: flex;
+                        &_time{
+                            margin-right: 20px;
+                            color: #000;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#mytren{
+    background:no-repeat, url(../img/mytren.png);
+    width: 100%;
+    background-size: cover;
+}
+.mytren{
+    &_title{
+        margin-bottom: 95px;
+        color: #000;
+    }
+    &_box{
+        background-color: #5A5A5A;
+    }
+}
+.nonactiv_card{
+    opacity: 50%;
+}
+//footer
+footer{
+    background-color: #6F7A8E;
+    width: 100%;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 33px;
+    &_box{
+        display: flex;
+        align-items: center;
+        &_text{
+            color: #fff;
+        }
+        &_icon{
+            margin-left: 38px;
+        }
+    }
+}
+.popup{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    overflow-y: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .4s, visibility .4s ;
+    &_box{
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        backdrop-filter: blur(24px);
+        position: relative;
+        display: flex;
+        max-width: 1365px;
+        padding: 63px 78px;
+        z-index: 1;
+        margin: 33px 104px;
+        transform: scale(0);
+        transition: transform .8s;
+        &_subbox{
+            display: flex;
+            width: 1210px;
+            justify-content: space-between;
+            &_img{
+                width: 431px;
+                height: 469px;
+            }
+            &_textbox{
+                &_title{
+                    color: #fff;
+                    font-weight: 600;
+                }
+                &_text{
+                    color: #fff;
+                    font-size: 24px;
+                    max-width: 675px;
+                    font-family: "Roboto Flex";
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
+.opis{
+    margin-top: 25px;
+}
+.popup.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup.open .popup_box{
+    transform: scale(1);
+}
+
+.popup_box_btn{
+    position: absolute;
+    right: 40px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .5s;
+}
+
+.popup_box_btn:hover{
+    opacity: 1;
+    
+}
+@keyframes show{
+    0%{
+        margin-top: -10px;
+    }
+}

@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://myfonts.ru/myfonts?fonts=zhizn");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex";
+}
+
+body {
+  background-color: black;
+}
+
+h1, h2 {
+  font-family: "Zhizn";
+  font-size: 90px;
+  color: white;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Zhizn";
+  font-size: 30px;
+  color: black;
+}
+
+p {
+  font-size: 24px;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
+header {
+  background-color: white;
+}
+
+.menu {
+  padding-top: 24px;
+  padding-bottom: 17px;
+}
+.menu_top {
+  display: flex;
+  align-items: center;
+}
+.menu_top_pice {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+.menu_top_pice_topic {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 62px;
+}
+.menu_top_pice_bmenu {
+  display: none;
+}
+
+.menu_top_pice:nth-child(8) {
+  margin-left: 237px;
+}
+
+#person {
+  background: no-repeat, url(../img/bg_lk.png);
+  background-size: cover;
+  width: 100%;
+}
+
+.person {
+  padding-top: 81px;
+  height: 775px;
+}
+.person_box {
+  display: flex;
+  margin-top: 36px;
+  justify-content: space-between;
+  max-width: 970px;
+}
+.person_box_subbox_name {
+  color: #fff;
+}
+.person_box_subbox_text {
+  color: #fff;
+  margin-top: 15px;
+}
+.person_box_subbox_btn {
+  margin-top: 40px;
+  padding: 25px 36px;
+  background: url(../img/btn.svg);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border-radius: 0px 0px 80px 0px;
+  border-width: 0px;
+  background-size: cover;
+  cursor: pointer;
+}
+.person_box_subbox_btn_text {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #6F7A8E;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 36px;
+  padding-bottom: 33px;
+}
+.footer_box {
+  display: flex;
+  align-items: center;
+}
+.footer_box_text {
+  color: #fff;
+}
+.footer_box_icon {
+  margin-left: 38px;
+}/*# sourceMappingURL=style_lk.css.map */
